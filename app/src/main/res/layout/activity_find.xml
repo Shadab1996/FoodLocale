@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+
+        >
+
+
+    </include>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/food_list"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/btnVoice"></android.support.v7.widget.RecyclerView>
+
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtFind"
+        android:gravity="center_horizontal"
+        android:text="FIND SOME LOCAL DELIGHTS!"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:background="#9beae6e6"
+
+         android:layout_below="@+id/tool_bar"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        style="@style/spinner_style"
+        android:transitionGroup="false"
+        android:layout_gravity="start"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:paddingLeft="5dp"
+
+        android:layout_below="@+id/txtFind"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/btnVoice"
+        android:background="@drawable/voice"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="startVoice"/>
+
+    <TextView
+        android:text="Search through voice!\nEg - Show Indian/Chinese/Italian dishes."
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3"
+        android:layout_toStartOf="@+id/btnVoice"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingLeft="5dp" />
+
+
+</RelativeLayout>

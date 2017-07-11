@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#263238">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:hint="Your Name"
+        android:textColorHighlight="#ffffff"
+        android:textSize="18dp"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtAdd"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtDish"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlace"
+        android:hint="Name of the place where you had it"
+        android:textSize="18dp"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/spinnerAdd"
+        android:layout_toEndOf="@+id/txtName"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtDesc"
+        android:hint="Description(optional)"
+        android:gravity="top"
+        android:textSize="18dp"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+        android:layout_below="@+id/btnPicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADD YOUR FAVOURITE DISH"
+        android:id="@+id/txtAdd"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#9beae6e6"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtLoc"
+        android:hint="Where is it Located?"
+        android:textSize="15dp"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnPicker"
+        android:layout_toEndOf="@+id/btnPicker"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnAdd"
+        android:textSize="25dp"
+        android:onClick="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDish"
+        android:hint="Name of the dish you love"
+        android:textSize="18dp"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/txtName"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:background="#1eeae6e6"
+        android:layout_above="@+id/btnAdd"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:id="@+id/spinnerAdd"
+        android:spinnerMode="dropdown"
+        style="@style/spinner_style"
+        android:transitionGroup="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_below="@+id/txtDish"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/txtPlace"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Pick Place"
+        android:id="@+id/btnPicker"
+        android:onClick="autoComplete"
+        android:layout_below="@+id/txtPlace"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp" />
+
+
+</RelativeLayout>

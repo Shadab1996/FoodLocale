@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#263238">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Dish"
+        android:id="@+id/btnAdd"
+        android:allowUndo="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/txtOr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find local delights"
+        android:id="@+id/btnFind"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/txtOr"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtWelcome"
+        android:gravity="center"
+        android:background="#9beae6e6"
+        android:textColor="#000000"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="OR"
+        android:id="@+id/txtOr"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#9beae6e6" />
+
+</RelativeLayout>

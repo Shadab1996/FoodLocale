@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "958745544111",
+    "firebase_url": "https://foodlocale.firebaseio.com",
+    "project_id": "foodlocale",
+    "storage_bucket": "foodlocale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958745544111:android:c2b30beb0f6ae016",
+        "android_client_info": {
+          "package_name": "com.stinkinsweet.foodlocale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958745544111-chdlqjvbdqs8qr9vh49fk3fbkfbrb9ep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stinkinsweet.foodlocale",
+            "certificate_hash": "7E5A5D9C4921851D893BA0BD3D8104A2AA65E667"
+          }
+        },
+        {
+          "client_id": "958745544111-aqb16ntoujl3ftbf5a16thui5epatn6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADFAP0o4LUjeeGEyS-uBWkeCD6_VtG_0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958745544111-aqb16ntoujl3ftbf5a16thui5epatn6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

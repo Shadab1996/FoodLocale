@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FoodLocale</string>
+    <string name="action_settings">Action Settings</string>
+
+    <string-array name="cuisines">
+        <item>Cuisine :</item>
+        <item>Indian</item>
+        <item>Indian Chinese</item>
+        <item>Italian</item>
+        <item>South Indian</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="cuisinesFind">
+        <item>All</item>
+        <item>Indian</item>
+        <item>Indian Chinese</item>
+        <item>Italian</item>
+        <item>South Indian</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_indian">Indian</string>
+
+</resources>

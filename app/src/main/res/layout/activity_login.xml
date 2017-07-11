@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtFood1"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:background="@color/background"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tool_bar"
+        android:text="Food Locale" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="find what your tastebuds need"
+        android:id="@+id/txtSub3"
+        android:allowUndo="false"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:background="@color/background"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtFood1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtFood1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Email"
+        android:textStyle="bold|italic"
+        android:background="@drawable/round_edit_text"
+        android:layout_above="@+id/password"
+        android:layout_marginBottom="30dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:textStyle="bold|italic"
+        android:hint="Password"
+        android:background="@drawable/round_edit_text"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="#EF5350"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtFood1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New User? Click here to Register"
+        android:id="@+id/txtSub4"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:onClick="register"
+        android:clickable="true"
+        android:layout_marginTop="47dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/btnLogin"
+        android:onClick="Login"
+        android:layout_marginTop="53dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+</RelativeLayout>
